@@ -1,0 +1,43 @@
+---
+title: "Introduction to R for Biologists"
+author: "Darianys Tayrí Hernández Rivera"
+date: " `r format(Sys.time(), '%Y-%b-%d, %I:%M %p')` "
+output:
+  prettydoc::html_pretty:
+    theme: hpstr
+    
+---
+# Greeting:
+#### Hi! My name is Darianys Tayrí Hernández Rivera.
+<center>
+<img src="Web_Page_Pic.jpg" width="360" height="460"/>
+</center>
+
+# A Scientist in the Making:
+I am a fourth year undergraduate student in Industrial Biotechnology at the University of Puerto Rico, Mayagüez Campus. My interest revolve around the biomedical field, specifically on how we can genetically modify organisms to produce proteins and other biological products on a large scale for use in medical treatments.
+<center>
+<img src="bioreactor gif.gif" width="360" height="460"/>
+</center>
+
+# Why Introduction to R for Biologists?
+During high school, I was involved in programming, which eventually led me to an internship at Lockheed Martin. Even though I realized that programming was not something I wanted to dedicate my career to, I always remained curious about how I could integrate it into my research and my career in biotechnology.
+At the university, I took INGE 3016: Introduction to Programming, where I worked with Python and enjoyed it a lot. Later, through my research internships, I learned that R is commonly used across the scientific community. Therefore, when I saw the opportunity to take this course, I viewed it as a chance to upgrade my skill set by learning something I knew I would enjoy and that would be valuable for my future research and career. I am excited to see what is ahead!
+<center>
+<img src="C:\Users\daria\OneDrive - University of Puerto Rico\Septimo Semestre\Introduction to R for Biologists\Web Page\coding laptop" width="250" height="350"/>
+</center>
+
+# Class Work
+<center>
+<img src="C:\Users\daria\OneDrive - University of Puerto Rico\Septimo Semestre\Introduction to R for Biologists\Web Page\pink-file-folder-icon-illustrating-office-and-business-documents-and-organization-png.webp" width="200" height="200"/>
+</center>
+<br> 
+
+RT1:<br> 
+RT2:<br> 
+RT3:<br> 
+RT4:<br> 
+RT5:
+```{r}
+
+```
+
