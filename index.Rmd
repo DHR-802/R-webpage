@@ -21,7 +21,7 @@ I am a fourth year undergraduate student in Industrial Biotechnology at the Univ
 
 # Why Introduction to R for Biologists?
 During high school, I was involved in programming, which eventually led me to an internship at Lockheed Martin. Even though I realized that programming was not something I wanted to dedicate my career to, I always remained curious about how I could integrate it into my research and my career in biotechnology.
-At the university, I took INGE 3016: Introduction to Programming, where I worked with Python and enjoyed it a lot. Later, through my research internships, I learned that R is commonly used across the scientific community. Therefore, when I saw the opportunity to take this course, I viewed it as a chance to upgrade my skill set by learning something I knew I would enjoy and that would be valuable for my future research and career. I am excited to see what is ahead!
+At the university, I took INGE 3016: Introduction to Programming, where I worked with Python and enjoyed it a lot. Later, through my research internships, I learned that R is commonly used across the scientific community. Therefore, when I saw the opportunity to take this course, I viewed it as a chance to learn something I knew would be valuable for my future research and career. I am excited to see what is ahead!
 <center>
 <img src="C:\Users\daria\OneDrive - University of Puerto Rico\Septimo Semestre\Introduction to R for Biologists\R-webpage\coding laptop" width="250" height="350"/>
 </center>
