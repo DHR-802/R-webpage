@@ -14,8 +14,8 @@ output:
 </center>
 
 # A Scientist in the Making:
-I am a fourth year undergraduate student in Industrial Biotechnology at the University of Puerto Rico, Mayagüez Campus. My interest revolve around the biomedical field, specifically on how we can genetically modify organisms to produce proteins and other biological products on a large scale for use in medical treatments.
-<center>
+I am a fourth year undergraduate student in Industrial Biotechnology at the University of Puerto Rico, Mayagüez Campus. My interest revolve around the biomedical field, specifically on how we can genetically modify organisms to produce proteins and other biological products on a large scale for use in medical treatments. 
+
 <img src="bioreactor gif.gif" width="360" height="460"/>
 </center>
 
