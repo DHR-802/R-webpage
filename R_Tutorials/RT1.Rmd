@@ -1,6 +1,6 @@
 ---
 title: "RTutorial1"
-author: "Darianys Tayri Hernández Rivera"
+author: "Darianys Tayrí Hernández Rivera"
 date: "2026-09-18, 10:30pm"
 output: html_document
 ---
