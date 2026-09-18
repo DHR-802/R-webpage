@@ -32,7 +32,7 @@ At the university, I took INGE 3016: Introduction to Programming, where I worked
 </center>
 <br> 
 
-RT1:<br> 
+RT1: [Assignment_1_sep18](RT1.html) <br> 
 RT2:<br> 
 RT3:<br> 
 RT4:<br> 
