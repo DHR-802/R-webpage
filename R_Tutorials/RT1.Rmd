@@ -1,0 +1,70 @@
+---
+title: "R_Tutorial_1"
+author: "Darianys Tayri Hernández Rivera"
+date: "2026-09-18, 10:30pm"
+output: html_document
+---
+<br> 
+Q1.Create an object called `height` with the value 175. Print it.
+```{r}
+height <- 175
+height
+```
+<br> 
+Q2. Calculate the result of 25 * 4 - 10. (Calcula el resultado de 25 * 4 - 10.)
+
+```{r}
+25 * 4 - 10
+```
+<br>
+Q3. Use the function sqrt() to calculate the square root of 81. (Usa la función sqrt() para calcular la raíz cuadrada de 81.)
+```{r}
+sqrt(81)
+```
+<br>
+Q4. Assign the phrase “R is fun!” to an object called message. Print it. (Asigna la frase “R is fun!” a un objeto llamado message. Muéstralo.)
+```{r}
+message <- "R is fun!"
+message
+```
+<br>
+Q5. Create two objects a <- 10 and b <- 5. Calculate their sum and store it in c. (Crea dos objetos a <- 10 y b <- 5. Calcula su suma y guárdala en c.)
+```{r}
+a <- 10
+b <- 5
+c <-  (a + b)
+```
+<br>
+Q6. Test whether 15 is greater than 20. (Verifica si 15 es mayor que 20.)
+```{r}
+15>20
+```
+<br>
+Q7. Check the class of the object "Hello World". (Verifica la clase del objeto "Hello World".)
+```{r}
+class("Hello World")
+```
+<br>
+Q8. Run the following code chunk:
+- Observe the warnings that appear. (Observa las advertencias que aparecen.)
+- Modify the chunk options to suppress warnings without changing the code itself. (Modifica las opciones del chunk para apagar la advertencia sin cambiar el código.)
+```{r, warning=FALSE}
+log(-1)
+##This code returns a warning that can be turned off by using a knitr function, in this case, `warning=FALSE`. When using include option neither the code or the output message appears.
+```
+<br>
+Q9. Run the following code chunk: - Observe the messages that appear. (Observa los mensajes que aparecen.)
+
+Modify the chunk options to suppress messages without changing the code itself. (Modifica las opciones del chunk para apagar mensajes sin cambiar el código.)
+```{r, message=FALSE}
+library(dplyr)
+##R distinguishes between messages and warnings when running code. Therefore, when using the `warning` knitr option, the message still appears. I also observed that `echo=FALSE` hides the code but allows the message to appear. When `message=FALSE` and `echo=FALSE` are combined, neither the code nor the message appears, producing same result as using the `include=FALSE` option.
+
+```
+<br>
+Q10. Create a numeric vector called grades containing the values 80, 90, 75, 95, and 85. Then, use the mean() function to calculate the average grade and store the result in an object called average. Print the result.mean().) (Crea un vector numérico llamado grades que contenga los valores 80, 90, 75, 95 y 85. Luego, utiliza la función mean() para calcular el promedio y guarda el resultado en un objeto llamado average. Muestra el resultado en pantalla.)
+```{r}
+grades <- c(80,90,75,95,85)
+average <- mean(grades)
+average
+```
