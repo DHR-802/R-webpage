@@ -1,0 +1,91 @@
+---
+title: "RTutorial2"
+author: "Darianys Tayrí Hernández Rivera"
+date: "2026-09-25, 8:56pm"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(gapminder)
+data(gapminder)
+head(gapminder)
+```
+
+ <br>
+ Q1. What class is the gapminder dataset? Q1. ¿Qué clase es el dataset gapminder?
+```{r}
+class(gapminder)
+```
+ <br>
+Q2. Filter a section of gapminder with a life expectancy smaller than 29. Q2. Filtrar una sección de gapminder con esperanza de vida menor a 29.
+ 
+```{r}
+life_expectancy_filter <- gapminder %>%
+  filter(lifeExp < 29)
+head(life_expectancy_filter, 6)
+```
+<br>
+Q3 Filter the dataset for the country Rwanda and for years greater than 1979. Q3 Filtrar el dataset para el país Ruanda y para años mayores a 1979.
+```{r}
+dataset_filter <- gapminder %>% 
+  filter(country == "Rwanda",
+         year > 1979)
+head(dataset_filter, 6)
+```
+<br>
+Q4 Create a new dataset from gapminder excluding the column gdpPercap. Q4 Crear un nuevo dataset a partir de gapminder excluyendo la columna gdpPercap.
+```{r}
+new_dataset <- gapminder %>% 
+  select(!(gdpPercap))
+head(new_dataset,6)
+```
+<br>
+Q5 Arrange the dataset in ascending order of lifeExp. Q5 Ordenar el dataset en orden ascendente según lifeExp.
+```{r}
+lifeExp_ascending <- gapminder %>%
+  arrange(lifeExp)
+head(lifeExp_ascending,6)
+```
+<br>
+Q6 Arrange the dataset in descending order of lifeExp. Q6 Ordenar el dataset en orden descendente según lifeExp.
+```{r}
+lifeExp_descending <- gapminder %>% 
+  arrange(desc(lifeExp))
+head(lifeExp_descending,6)
+```
+<br>
+Q7 Create a new dataset with only the columns year and lifeExp. Q7 Crear un nuevo dataset con solo las columnas year y lifeExp.
+```{r}
+select_col <- gapminder %>% 
+  select(year, lifeExp)
+head(select_col,6)
+```
+<br>
+Q8 Filter the dataset for the country Cambodia and show only the columns year and lifeExp. Q8 Filtrar el dataset para el país Camboya y mostrar únicamente las columnas year y lifeExp.
+```{r}
+cambodia_filter <- gapminder %>% 
+  filter(country == "Cambodia") %>% 
+  select(year, lifeExp)
+head(cambodia_filter,6)
+```
+Q9. Select only the countries in Africa. Q9. Seleccionar únicamente los países que están en África.
+
+```{r}
+countriesinAfrica_filter <- gapminder %>% 
+  filter(continent == "Africa") %>% 
+  select(country)
+head(countriesinAfrica_filter,6)
+```
+<br>
+Q10. Create a new column called lifeExp_months that shows life expectancy in months. Q10. Crear una nueva columna llamada lifeExp_months que muestre la esperanza de vida en meses.
+```{r}
+lifeExp_months_col <- gapminder %>% 
+  mutate(lifeExp_months = lifeExp*12)
+head(lifeExp_months_col, 6)
+```
+
+
+
+
+ 
