@@ -34,7 +34,7 @@ At the university, I took INGE 3016: Introduction to Programming, where I worked
 <br> 
 
 RT1: [Assignment_1_sep18](R_Tutorials/RT1.html) <br> 
-RT2:<br> 
+RT2: [Assignment_2_sep24](R_Tutorials/RT2.html) <br> 
 RT3:<br> 
 RT4:<br> 
 RT5:
