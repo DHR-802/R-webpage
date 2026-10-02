@@ -1,0 +1,54 @@
+---
+title: "RT3"
+author: "Darianys Tayrí Hernández Rivera"
+date: "2026-10-01, 9:00pm"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(ggplot2)
+data("trees")
+head(trees)
+```
+
+Q1. Create a histogram showing the distribution of Girth.
+Q1. Cree un histograma que muestre la distribución de Girth.
+```{r}
+girth_hist <- ggplot(data = trees, mapping = aes(x = Girth)) +
+  geom_histogram(fill = "pink", bins=8)
+girth_hist
+```
+<br>
+Q2. Create a histogram showing the distribution of Volume.
+Q2. Cree un histograma que muestre la distribución de Volume.
+```{r}
+vol_hist <- ggplot(data = trees, mapping = aes(x = Volume)) +
+  geom_histogram(fill = "pink",bins= 5)
+vol_hist
+```
+<br>
+Q3. Create a scatterplot showing the relationship between Girth and Volume.
+Q3. Cree un gráfico de dispersión que muestre la relación entre Girth y Volume.
+```{r}
+girth_vol_scatterplot <- ggplot(data = trees, aes(x = Girth, y = Volume)) + geom_point(color="pink")
+girth_vol_scatterplot
+```
+<br>
+Q4. Use the Shapiro–Wilk test to assess whether Volume is normally distributed. Report the p-value and state whether the data are normally distributed.
+Q4. Utilice la prueba de Shapiro–Wilk para evaluar si Volume tiene una distribución normal. Reporte el valor de p e indique si los datos tienen una distribución normal.
+```{r}
+vol_test <- shapiro.test(trees$Volume)
+vol_test
+# The reported p-value is 0.0036. Since p-value < 0.05 the Volume is not normally distributed. Null hypothesis of normality is rejected.
+```
+<br>
+Q5. Repeat the Shapiro–Wilk test for Girth. Report the p-value and state whether Girth is normally distributed.
+Q5. Repita la prueba de Shapiro–Wilk para Girth. Reporte el valor de p e indique si los datos tienen una distribución normal.
+```{r}
+girth_test <- shapiro.test(trees$Girth)
+girth_test
+# The reported p-value is 0.089. Since p-value > 0.05 the Girth is normally distributed. Failed to reject null hypothesis of normality.
+```
+
+
+
