@@ -402,8 +402,9 @@ appear. (Observa los mensajes que aparecen.)</p>
 <p>Modify the chunk options to suppress messages without changing the
 code itself. (Modifica las opciones del chunk para apagar mensajes sin
 cambiar el código.)</p>
-<pre class="r"><code>library(dplyr)
-##R distinguishes between messages and warnings when running code. Therefore, when using the `warning` knitr option, the message still appears. I also observed that `echo=FALSE` hides the code but allows the message to appear. When `message=FALSE` and `echo=FALSE` are combined, neither the code nor the message appears, producing same result as using the `include=FALSE` option.</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.6.1</code></pre>
+<pre class="r"><code>##R distinguishes between messages and warnings when running code. Therefore, when using the `warning` knitr option, the message still appears. I also observed that `echo=FALSE` hides the code but allows the message to appear. When `message=FALSE` and `echo=FALSE` are combined, neither the code nor the message appears, producing same result as using the `include=FALSE` option.</code></pre>
 <p><br> Q10. Create a numeric vector called grades containing the values
 80, 90, 75, 95, and 85. Then, use the mean() function to calculate the
 average grade and store the result in an object called average. Print
