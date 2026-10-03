@@ -15,7 +15,10 @@ Q1. Create a histogram showing the distribution of Girth.
 Q1. Cree un histograma que muestre la distribución de Girth.
 ```{r}
 girth_hist <- ggplot(data = trees, mapping = aes(x = Girth)) +
-  geom_histogram(fill = "pink", bins=8)
+  geom_histogram(fill = "pink", bins=8, alpha = 0.7) +
+  geom_text( stat = "bin", bins = 8, aes(label = after_stat(count)), vjust = -0.5) +
+  ggtitle("Distribution of Girth") +
+  theme_classic()
 girth_hist
 ```
 <br>
@@ -23,14 +26,21 @@ Q2. Create a histogram showing the distribution of Volume.
 Q2. Cree un histograma que muestre la distribución de Volume.
 ```{r}
 vol_hist <- ggplot(data = trees, mapping = aes(x = Volume)) +
-  geom_histogram(fill = "pink",bins= 5)
+  geom_histogram(fill = "blue",bins= 6, alpha = 0.4) +
+  ggtitle("Distribution of Volume") + 
+  scale_x_continuous(breaks = seq(0, 80, by = 10)) + 
+  scale_y_continuous(breaks = seq(0, 20, by = 2)) +
+  theme_test()
 vol_hist
 ```
 <br>
 Q3. Create a scatterplot showing the relationship between Girth and Volume.
 Q3. Cree un gráfico de dispersión que muestre la relación entre Girth y Volume.
-```{r}
-girth_vol_scatterplot <- ggplot(data = trees, aes(x = Girth, y = Volume)) + geom_point(color="pink")
+```{r, message= FALSE}
+girth_vol_scatterplot <- ggplot(data = trees, aes(x = Girth, y = Volume)) + geom_point(color= "magenta", size= 3, shape= 17)+
+  geom_smooth(method = "lm", se = FALSE, color = "pink") +
+  ggtitle("Relationship Between Girth and Volume") +
+  theme_light()
 girth_vol_scatterplot
 ```
 <br>
