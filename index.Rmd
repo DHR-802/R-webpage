@@ -37,8 +37,6 @@ RT1: [Assignment_1_sep18](R_Tutorials/RT1.html) <br>
 RT2: [Assignment_2_sep24](R_Tutorials/RT2.html) <br> 
 RT3: [Assignment_3_oct02](R_Tutorials/RT3.html) <br>
 RT4: [Assignment_29_oct02](R_Tutorials/RT4.html) <br>
+R_Midterm[Midterm](R_Tutorials/R_Midterm.html) <br>
 RT5:
-```{r}
-
-```
 
